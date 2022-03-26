@@ -1,10 +1,10 @@
 <?php
+
 class Conta
 {
-    protected  $agencia;
+    protected $agencia;
     protected $conta;
     protected $saldo;
-
     public function __construct($agencia, $conta, $saldo)
     {
         $this->agencia = $agencia;
@@ -14,7 +14,9 @@ class Conta
         }
     }
 
-    public function retirar ($quantia){}
+    public function retirar($quantia)
+    {
+    }
 
     public function depositar($quantia)
     {

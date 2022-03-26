@@ -1,7 +1,5 @@
 <?php
 
-
-
 class Produto
 {
     private $descricao;
@@ -51,20 +49,26 @@ class Produto
 
     public function aumentarEstoque($unidades)
     {
-        if (is_numeric($unidades) and $unidades >= 0); {
+        if (is_numeric($unidades) and $unidades >= 0) {
+            ;
+        } {
             $this->estoque += $unidades;
         }
     }
     public function diminuirEstoque($unidades)
     {
-        if (is_numeric($unidades) and $unidades >= 0); {
+        if (is_numeric($unidades) and $unidades >= 0) {
+            ;
+        } {
             $this->estoque -= $unidades;
         }
     }
 
     public function reajustarPreco($percentual)
     {
-        if (is_numeric($percentual) and $percentual < 0); {
+        if (is_numeric($percentual) and $percentual < 0) {
+            ;
+        } {
             $this->preco *= (1 + ($percentual / 100));
         }
     }

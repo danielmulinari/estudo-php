@@ -1,4 +1,5 @@
 <?php
+
 /*
 $salario = 2000;
 $tempo = 12;
@@ -34,39 +35,32 @@ print $cont . '';
 $cont ++;
 }
 */
-for ($cont = 1; $cont <= 10 ;$cont ++)
-{
-     print $cont . '' . "<br>";
+for ($cont = 1; $cont <= 10; $cont++) {
+    print $cont . '' . "<br>";
 }
 $tipo = 'pdf';
-switch ($tipo)
-{
+switch ($tipo) {
     case 'pdf':
-        print 'arquivo PDF' . "<br>";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    print 'arquivo PDF' . "<br>";
+
         break;
-     case 'doc':
-        print 'arquivo DOC';
+    case 'doc':
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    print 'arquivo DOC';
+
         break;
     default:
-    print 'arquivo default';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    print 'arquivo default';
 }
 
 $tipo = 'pdf';
-if ($tipo == 'pdf')
-{
+if ($tipo == 'pdf') {
     print 'arquivo PDF' . "<br>";
-}
-else if ($tipo == 'DOC')
-{
+} elseif ($tipo == 'DOC') {
     print 'arquivo DOC';
-}
-else 
-{
+} else {
     print 'arquivo default';
-
 }
 $lista = ['maça' , 'laranja' ,'banana'];
-foreach ( $lista as $fruta)
-{
-      print $fruta . ' ' . "<br>";
+foreach ($lista as $fruta) {
+    print $fruta . ' ' . "<br>";
 }

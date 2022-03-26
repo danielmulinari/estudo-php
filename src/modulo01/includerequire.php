@@ -2,4 +2,4 @@
 
 require 'quadrado.php';
 
-var_dump( quadrado(4) );
+var_dump(quadrado(4));

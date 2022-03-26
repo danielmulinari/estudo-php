@@ -1,4 +1,5 @@
 <?php
+
  /*
  $valor = 100;
  $valor = $valor + 5;
@@ -8,7 +9,7 @@
  $valor *= 5;
  $valor /= 5;
  var_dump($valor);
- 
+
 $teste = ++ $valor;
 var_dump($valor);
 var_dump($teste);
@@ -39,20 +40,17 @@ if ($valor1 === $valor2)
 }
 */
 $salario = 1000;
-$cargo ='gerente';
-if ($salario >800 AND $cargo == 'gerente')
-{
+$cargo = 'gerente';
+if ($salario > 800 and $cargo == 'gerente') {
     echo 'ok';
 }
 $salario = 500;
-$cargo ='gerente';
-if ($salario >800 || $cargo == 'gerente')
-{
+$cargo = 'gerente';
+if ($salario > 800 || $cargo == 'gerente') {
     echo 'ok';
 }
 $salario = 500;
-$cargo ='gerente';
-if ( ! ($salario >800 || $cargo == 'gerente') )
-{
+$cargo = 'gerente';
+if (! ($salario > 800 || $cargo == 'gerente')) {
     echo 'ok';
 }

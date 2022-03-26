@@ -1,4 +1,5 @@
 <?php
+
 //$cores = array ('vermelho', 'verde', 'amarelo');
 //print ($cores [0]);
 //$cores = ['vermelho', 'verde', 'amarelo'];
@@ -25,15 +26,15 @@ $pessoa ['cidade'] = 'Passo Fundo';
 //var_dump ($pessoa);
 //echo $pessoa ['nascimento'];
 foreach ($pessoa as $chave => $informação)
-{ 
+{
       print  $chave . ':' .$informação . '<br>';
-    
+
 }
 */
 $carros = ['palio' => ['cor' => 'azul',
                        'marca' => 'fiat',
                        'ano' => 2002],
-            'corsa' => ['cor'=> 'prata',
+            'corsa' => ['cor' => 'prata',
                         'marca' => 'GM',
                         'ano => 2003']
 ];
@@ -56,10 +57,8 @@ $cores = ['vermelho', 'verde', 'amarelo'];
 //array_shift ($cores);
 //array_pop ($cores);
 //$cores = array_reverse ($cores);
-$resultado = array_merge ($cores, ['ciano', 'magenta']);
+$resultado = array_merge($cores, ['ciano', 'magenta']);
 var_dump($resultado);
- 
-
 $carros = [];
 $carros[10001] = 'Palio 2002';
 $carros[73933] = 'Corsa 2003';
@@ -72,8 +71,8 @@ $carros[12838] = 'Uno 1999';
 //var_dump ( ($carros)) ;
 //var_dump ( in_array ( 'Uno 1999', $carros));
 $data = '14-03-22';
-$partes = explode ('-' , $data);
+$partes = explode('-', $data);
 print $partes [2];
 echo '<br>';
 $partes = ['14', '03','2022'];
-print implode ( '-', $partes);
+print implode('-', $partes);

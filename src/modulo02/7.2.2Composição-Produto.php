@@ -1,4 +1,5 @@
 <?php
+
 class Produto
 {
     private $descricao;
@@ -6,28 +7,27 @@ class Produto
     private $preço;
     private $fabricante;
     private $caracteristicas = [];
-
     public function __construct($descricao, $estoque, $preco)
     {
         $this->descricao = $descricao;
         $this->estoque = $estoque;
         $this->preço = $preco;
     }
-     public function addCaracteristica( $nome, $valor)
-     {
-       $this->caracteristicas[] = new Caracteristica( $nome, $valor);
-     }
-     public function getCaracteristicas()
-     {
+    public function addCaracteristica($nome, $valor)
+    {
+        $this->caracteristicas[] = new Caracteristica($nome, $valor);
+    }
+    public function getCaracteristicas()
+    {
         return $this->caracteristicas;
-     }
+    }
 
-    public function  getDescricao()
+    public function getDescricao()
     {
         return $this->descricao;
     }
 
-    public function  setFabricante(Fabricante $fabricante)
+    public function setFabricante(Fabricante $fabricante)
     {
         $this->fabricante = $fabricante;
     }
