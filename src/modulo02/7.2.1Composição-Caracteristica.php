@@ -1,18 +1,17 @@
 <?php
-class Caracteristica
+
+Class Caracteristica
 {
     private $nome;
     private $valor;
-    
-    public function __construct($nome, $valor )
+    public function __construct($nome, $valor)
     {
-        $this ->nome =$nome;
-        $this ->valor =$valor;
-
+        $this-> nome=$nome;
+        $this->valor=$valor;
     }
     public function getNome()
     {
-        return $this -> nome;
+        return $this->nome;
     }
     public function getValor()
     {
